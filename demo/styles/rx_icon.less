@@ -1,0 +1,32 @@
+.rx_icon {
+    position: relative;
+    height: 64px;
+    width: 64px;
+    .ic {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 50%;
+        margin-left: -12px;
+        top: 50%;
+        margin-top: -12px;
+        .line {
+            position: absolute;
+            left: 3px;
+            right: 3px;
+            height: 2px;
+            background: white;
+            &.one {
+                top: 6px;
+                transform-origin: right bottom;
+            }
+            &.two {
+                top: 11px;
+            }
+            &.thr {
+                transform-origin: right top;
+                top: 16px;
+            }
+        }
+    }
+}
