@@ -22,12 +22,20 @@
 }
 .rx_icon .ic .line.one {
   top: 6px;
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
   transform-origin: right bottom;
 }
 .rx_icon .ic .line.two {
   top: 11px;
 }
 .rx_icon .ic .line.thr {
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
   transform-origin: right top;
   top: 16px;
 }

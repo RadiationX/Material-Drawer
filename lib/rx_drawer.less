@@ -1,3 +1,18 @@
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
 
 .drawer_bg {
     position: fixed;
@@ -18,6 +33,21 @@
     transform: translateZ(0);
 }
 
+/*body.drawer_mobile #drawer {
+    .links {
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+    }
+}*/
+
 .drawer {
     max-width: 320px;
     width: 75%;
@@ -25,6 +55,10 @@
     left: 0px;
     top: 0;
     bottom: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
     background: white;
     position: fixed;
@@ -33,10 +67,19 @@
     box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
     &:after {
         content: "";
-        position: absolute;
+        position: fixed;
         top: 64px;
         bottom: 0;
         width: 32px;
         right: -32px;
+    }
+    .antiSelect {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
     }
 }
