@@ -5,11 +5,11 @@ body {
   background: #eee;
   font-family: sans-serif;
 }
-.wrapper {
+.container {
   padding-top: 64px;
 }
-.wrapper .header {
-  height: 64px;
+.container .header {
+  height: 56px;
   background: #666981;
   position: fixed;
   top: 0;
@@ -17,25 +17,115 @@ body {
   right: 0;
   width: 100%;
   z-index: 3;
+  box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.5);
 }
-.wrapper .header .rx_icon {
+.container .header .rx_icon {
   float: right;
+  height: 56px;
+  width: 56px;
 }
-.wrapper .header .title {
+.container .header .title {
   height: 100%;
-  line-height: 64px;
+  line-height: 56px;
   padding-left: 16px;
+  padding-right: 8px;
   float: right;
   color: white;
   font-size: 18px;
 }
-.drawer .links {
-  height: 100%;
-  overflow-y: scroll;
+.container .wrapper {
+  padding: 0 1em;
 }
-.drawer .links a {
+.container .wrapper .content {
+  box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.87);
+  background: white;
+  padding: 1em;
+  padding-top: 0;
+  margin: 1em auto;
+  overflow: hidden;
+  max-width: 640px;
+  border-radius: 2px;
+}
+.container .wrapper .content p {
+  line-height: 1.25em;
+}
+.drawer .content {
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+.drawer .content .header {
+  height: 144px;
+  background: #5a5d72;
+  position: relative;
+}
+.drawer .content .header .avatar {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/225694/profile/profile-512_1.jpg');
+  height: 64px;
+  width: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+.drawer .content .header .text {
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 0;
+  color: white;
+}
+.drawer .content .header .text .field {
+  padding-left: 16px;
+  font-size: 14px;
+}
+.drawer .content .header .text .field.name {
+  font-weight: bold;
+}
+.drawer .content .header .text .field.info {
+  margin-top: 4px;
+}
+.drawer .content ul.menu {
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+}
+.drawer .content ul.menu li.item {
   display: block;
-  text-align: center;
-  line-height: 2.5em;
-  border-bottom: 1px solid #f1f1f1;
+  font-size: 14px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 72px;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+}
+.drawer .content ul.menu li.item.subheader {
+  color: rgba(0, 0, 0, 0.54);
+  padding-left: 16px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.drawer .content ul.menu li.item.subheader:after {
+  content: none;
+}
+.drawer .content ul.menu li.item:after {
+  content: "";
+  background-image: url('https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_brightness_high_black_24px.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  opacity: 0.54;
 }

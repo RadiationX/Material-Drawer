@@ -19,6 +19,7 @@
   right: 3px;
   height: 2px;
   background: white;
+  outline: 1px solid transparent;
 }
 .rx_icon .ic .line.one {
   top: 6px;

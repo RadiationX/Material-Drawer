@@ -1,5 +1,9 @@
-var drawer;
+var drawer,
+    drawerElem,
+    iconElem;
 window.addEventListener("load", function (e) {
-    drawer = new Drawer(document.getElementById("drawer"), document.getElementById("drawer_bg"));
-    drawer.setDrawerIcon(new DrawerIcon(document.getElementById("rx_icon")));
+    drawerElem = document.getElementById("drawer");
+    iconElem = document.getElementById("rx_icon");
+    drawer = new Drawer(drawerElem);
+    drawer.setDrawerIcon(new DrawerIcon(iconElem));
 });

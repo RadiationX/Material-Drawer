@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <g opacity="1">
+            <defs>
+                <rect id="SVGID_5_" opacity="0.5" width="24" height="24" />
+            </defs>
+            <clipPath id="SVGID_6_">
+                <use xlink:href="#SVGID_5_" overflow="visible" />
+            </clipPath>
+            <g clip-path="url(#SVGID_6_)">
+                <g>
+                    <defs>
+                        <rect id="SVGID_7_" width="24" height="24" />
+                    </defs>
+                    <clipPath id="SVGID_8_">
+                        <use xlink:href="#SVGID_7_" overflow="visible" />
+                    </clipPath>
+                    <path clip-path="url(#SVGID_8_)" fill="#ffffff" d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,8h18V6H3V8z" />
+                </g>
+            </g>
+        </g>
+
+    </svg>
