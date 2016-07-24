@@ -6,48 +6,46 @@ body {
 }
 @ava: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225694/profile/profile-512_1.jpg';
 @ic: 'https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_brightness_high_black_24px.svg';
-.container {
-    padding-top: 64px;
-    .header {
+#header {
+    height: 56px;
+    background: #666981;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.5);
+    .rx_icon {
+        float: right;
         height: 56px;
-        background: #666981;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 3;
-        box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.5);
-        .rx_icon {
-            float: right;
-            height: 56px;
-            width: 56px;
-        }
-        .title {
-            height: 100%;
-            line-height: 56px;
-            padding-left: 16px;
-            padding-right: 8px;
-            float: right;
-            color: white;
-            font-size: 18px;
-        }
+        width: 56px;
     }
-    .wrapper {
-        padding: 0 1em;
-        .content {
-            box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
-            color: rgba(0, 0, 0, 0.87);
-            background: white;
-            padding: 1em;
-            padding-top: 0;
-            margin: 1em auto;
-            overflow: hidden;
-            max-width: 640px;
-            border-radius: 2px;
-            p{
-                line-height: 1.25em;
-            }
+    .title {
+        height: 100%;
+        line-height: 56px;
+        padding-left: 16px;
+        padding-right: 8px;
+        float: right;
+        color: white;
+        font-size: 18px;
+    }
+}
+.container {
+    padding: 0 1em;
+    padding-top: 64px;
+    .content {
+        box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.87);
+        background: white;
+        padding: 1em;
+        padding-top: 0;
+        margin: 1em auto;
+        overflow: hidden;
+        max-width: 640px;
+        border-radius: 2px;
+        p {
+            line-height: 1.25em;
         }
     }
 }
