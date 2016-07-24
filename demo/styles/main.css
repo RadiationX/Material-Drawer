@@ -7,7 +7,7 @@ body {
 }
 #header {
   height: 56px;
-  background: #666981;
+  background: #687894;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,6 +48,10 @@ body {
 .container .content p {
   line-height: 1.25em;
 }
+.container .content a {
+  text-decoration: none;
+  color: #0277bd;
+}
 .drawer .content {
   height: 100%;
   position: relative;
@@ -55,7 +59,7 @@ body {
 }
 .drawer .content .header {
   height: 144px;
-  background: #5a5d72;
+  background: #687894;
   position: relative;
 }
 .drawer .content .header .avatar {
