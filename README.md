@@ -50,13 +50,13 @@ drawer.onCloseListener(function () {
 ###.onMoveListener(listener)
 Listener called when drawer moved
 
-x - moved pixels, from 0 to width drawer
+**x** - moved pixels, from 0 to width drawer
 
-percent- from 0 to 1
+**percent** - from 0 to 1
 
-animation - false if drawer manually move, true if drawer thrown
+**animation** - false if drawer manually move, true if drawer thrown
 
-duration - 0 if drawer manually move, duration in seconds if drawer thrown
+**duration** - 0 if drawer manually move, duration in seconds if drawer thrown
 ```javascript
 drawer.onMoveListener(function (x, percent, animation, duration) {
     console.log(x + " " + percent + " " + animation + " " + duration);
