@@ -131,3 +131,6 @@ body {
   top: 12px;
   opacity: 0.54;
 }
+.drawer .content ul.menu li.item:active {
+  background: rgba(0, 0, 0, 0.12);
+}

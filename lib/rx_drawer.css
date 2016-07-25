@@ -24,13 +24,13 @@
   width: 100%;
   height: 100%;
   z-index: 4;
-  pointer-events: none;
   opacity: 0.001;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+  visibility: hidden;
 }
 .drawer {
   max-width: 320px;
@@ -54,20 +54,18 @@
   -o-box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
   box-shadow: 3px 0 16px -3px rgba(0, 0, 0, 0.4);
 }
-.drawer:after {
-  content: "";
-  position: fixed;
+.drawer .label {
+  position: absolute;
   top: 56px;
   bottom: 0;
   width: 32px;
   right: -32px;
 }
 .drawer .antiSelect {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  pointer-events: none;
+  visibility: hidden;
 }

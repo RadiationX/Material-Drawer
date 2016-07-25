@@ -24,13 +24,13 @@
     width: 100%;
     height: 100%;
     z-index: 4;
-    pointer-events: none;
     opacity: 0.001;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
+    visibility: hidden;
 }
 .drawer {
     max-width: 320px;
@@ -53,21 +53,19 @@
     -ms-box-shadow: @shadow;
     -o-box-shadow: @shadow;
     box-shadow: @shadow;
-    &:after {
-        content: "";
-        position: fixed;
+    .label {
+        position: absolute;
         top: 56px;
         bottom: 0;
         width: 32px;
         right: -32px;
     }
     .antiSelect {
-        content: "";
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        pointer-events: none;
+        visibility: hidden;
     }
 }
