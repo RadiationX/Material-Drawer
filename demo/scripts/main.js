@@ -20,5 +20,6 @@ window.addEventListener("load", function (e) {
     drawer.openDrawer();
     drawer.closeDrawer();
     drawer.toggleDrawer();
-    drawer.isOpen();*/
+    drawer.isOpen();
+    drawer.resetIconOnClick();*/
 });

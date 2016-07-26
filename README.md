@@ -33,6 +33,11 @@ Return setted drawer icon
 ```javascript
 drawer.getDrawerIcon();
 ```
+###.resetIconOnClick()
+Reset icon onclick listener to default (toggle drawer)
+```javascript
+drawer.resetIconOnClick();
+```
 ###.onOpenListener(listener)
 Listener call after drawer open
 ```javascript
