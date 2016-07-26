@@ -1,6 +1,6 @@
 # Material-Drawer
 ##What is it
-This is library for easy adding [Material Design Navigation Drawer](https://material.google.com/patterns/navigation-drawer.html) in your site.
+This library contains [Material Design Navigation Drawer](https://material.google.com/patterns/navigation-drawer.html) component that could be easily put in your site.
 ## How to add
 You must download **rx_drawer.css** and **rx_drawer.js** or **min** versions. Add this files to head
 ```html
